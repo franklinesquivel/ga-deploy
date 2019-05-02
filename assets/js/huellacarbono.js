@@ -514,12 +514,17 @@ $(function () {
             $("#resultados").append("Refrigerante R410 a: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
             unidad = "";
             $("#num").val("");
-        } else {
-            $("#error").show(results);
+        } else if((unidad === "0" || unidad === "") && (num === "" || num <= 0)) {
+            $("#error").show();
         }
     });
 
     $('#finalizar').on('click', function () {
+        if(calculos.length === 0 && tipoC.length === 0){
+            $("#total").hide();
+            $("#unidadF").hide();
+            goodButtons();
+        }else if(calculos.length > 0 && tipoC.length){
         var suggest;
         $("#total").show();
         $("#unidadF").show();
@@ -575,9 +580,120 @@ $(function () {
                 $("#suggest").show();
                 $("#reduccion").hide();
         }
+        //Cambio en los botones
+        blockButtons();
+    }//fin else if
+});
 
-    });
+$(".delete").on('click', function () {
+    $("#total").text(" ");
+    $("#total").hide();
+    $("#unidadF").hide();
+    $("#resultados").text(" ");
+    $("#conversion").text(" ");
+    $("#elec").hide();
+    $("#agua").hide();
+    $("#paper").hide();
+    $("#refri410").hide();
+    $("#refri404").hide();
+    $("#aguares").hide();
+    $("#diesell").hide();
+    $("#gaso").hide();
+    $("#fueloil").hide();
+    $("#dqo").hide();
+    $('#propano').hide();
+    $("#elec").val('0');
+    $("#agua").val('0');
+    $("#paper").val('0');
+    $("#refri410").val('0');
+    $("#refri404").val('0');
+    $("#aguares").val('0');
+    $("#diesell").val('0');
+    $("#gaso").val('0');
+    $("#fueloil").val('0');
+    $("#dqo").val('0');
+    $('#propano').val('0');
+    $("#error").hide();
+    $("#num").val("");
+    $(".section-mini").hide();
+    $(".dat-ini").hide();
+    $("#process").show();
+    $("#valorIni").text("");
+    $("#valorFin").text("");
+    $("#suggest").text("");
+    $("#suggest").hide("");
+    $("#reduccion").hide();
+    $(".suggest-div").hide();
+    $("#num").focus();
+    $(".list-group").hide();
+    results = 0;
+    unidad = "";
+    mayor = 0;
+    calculos = new Array();
+    tipoC = new Array();
+    //Botones
+    goodButtons();
+});
 
+function goodButtons(){
+    //Boton Finalizar
+    $("#finalizar").removeClass("wow animated fadeInUp btn btn-common mt-50 disabled");
+    $("#finalizar").addClass("wow animated fadeInUp btn btn-common mt-50");
+    //Boton Calcular
+    $("#calcu").removeClass("wow animated fadeInDown btn btn-common mt-50 disabled");
+    $("#calcu").addClass("wow animated fadeInDown btn btn-common mt-50");
+    //Botones calculos
+    $("#purple").removeClass("wow animated slideInRight btn btn-common mt-50 disabled");
+    $("#black").removeClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+    $("#grey").removeClass("wow animated slideInRight btn btn-common mt-50 disabled");
+    $("#orange").removeClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+    $("#wine").removeClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+    $("#red").removeClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+    $("#blue").removeClass("wow animated slideInRight btn btn-common mt-50 disabled");
+    $("#coffee").removeClass("wow animated slideInRight btn btn-common mt-50 disabled");
+    $("#bluesky").removeClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+    $("#yellow").removeClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+    $("#purple").addClass("wow animated slideInRight btn btn-common mt-50");
+    $("#black").addClass("wow animated slideInLeft btn btn-common mt-50");
+    $("#grey").addClass("wow animated slideInRight btn btn-common mt-50");
+    $("#orange").addClass("wow animated slideInLeft btn btn-common mt-50");
+    $("#wine").addClass("wow animated slideInLeft btn btn-common mt-50");
+    $("#red").addClass("wow animated slideInLeft btn btn-common mt-50");
+    $("#blue").addClass("wow animated slideInRight btn btn-common mt-50");
+    $("#coffee").addClass("wow animated slideInRight btn btn-common mt-50");
+    $("#bluesky").addClass("wow animated slideInLeft btn btn-common mt-50");
+    $("#yellow").addClass("wow animated slideInLeft btn btn-common mt-50");
+}
+
+    function blockButtons(){
+        //Boton Finalizar
+        $("#finalizar").removeClass("wow animated fadeInUp btn btn-common mt-50");
+        $("#finalizar").addClass("wow animated fadeInUp btn btn-common mt-50 disabled");
+        //Boton Calcular
+        $("#calcu").removeClass("wow animated fadeInDown btn btn-common mt-50");
+        $("#calcu").addClass("wow animated fadeInDown btn btn-common mt-50 disabled");
+        //Botones calculos
+        $("#purple").removeClass("wow animated slideInRight btn btn-common mt-50");
+        $("#purple").addClass("wow animated slideInRight btn btn-common mt-50 disabled");
+        $("#black").removeClass("wow animated slideInLeft btn btn-common mt-50");
+        $("#black").addClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+        $("#grey").removeClass("wow animated slideInRight btn btn-common mt-50");
+        $("#grey").addClass("wow animated slideInRight btn btn-common mt-50 disabled");
+        $("#orange").removeClass("wow animated slideInLeft btn btn-common mt-50");
+        $("#orange").addClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+        $("#wine").removeClass("wow animated slideInLeft btn btn-common mt-50");
+        $("#wine").addClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+        $("#red").removeClass("wow animated slideInLeft btn btn-common mt-50");
+        $("#red").addClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+        $("#blue").removeClass("wow animated slideInRight btn btn-common mt-50");
+        $("#blue").addClass("wow animated slideInRight btn btn-common mt-50 disabled");
+        $("#coffee").removeClass("wow animated slideInRight btn btn-common mt-50");
+        $("#coffee").addClass("wow animated slideInRight btn btn-common mt-50 disabled");
+        $("#bluesky").removeClass("wow animated slideInLeft btn btn-common mt-50");
+        $("#bluesky").addClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+        $("#yellow").removeClass("wow animated slideInLeft btn btn-common mt-50");
+        $("#yellow").addClass("wow animated slideInLeft btn btn-common mt-50 disabled");
+    }
     function getMaxOfArray(numArray) {
         return Math.max.apply(null, numArray);
     }
@@ -589,54 +705,6 @@ $(function () {
         $("#valorIni").show();
         $("#valorFin").show();
     }
-
-    $(".delete").on('click', function () {
-        $("#total").text(" ");
-        $("#total").hide();
-        $("#unidadF").hide();
-        $("#resultados").text(" ");
-        $("#conversion").text(" ");
-        $("#elec").hide();
-        $("#agua").hide();
-        $("#paper").hide();
-        $("#refri410").hide();
-        $("#refri404").hide();
-        $("#aguares").hide();
-        $("#diesell").hide();
-        $("#gaso").hide();
-        $("#fueloil").hide();
-        $("#dqo").hide();
-        $('#propano').hide();
-        $("#elec").val('0');
-        $("#agua").val('0');
-        $("#paper").val('0');
-        $("#refri410").val('0');
-        $("#refri404").val('0');
-        $("#aguares").val('0');
-        $("#diesell").val('0');
-        $("#gaso").val('0');
-        $("#fueloil").val('0');
-        $("#dqo").val('0');
-        $('#propano').val('0');
-        $("#error").hide();
-        $("#num").val("");
-        $(".section-mini").hide();
-        $(".dat-ini").hide();
-        $("#process").show();
-        $("#valorIni").text("");
-        $("#valorFin").text("");
-        $("#suggest").text("");
-        $("#suggest").hide("");
-        $("#reduccion").hide();
-        $(".suggest-div").hide();
-        $("#num").focus();
-        $(".list-group").hide();
-        results = 0;
-        unidad = "";
-        mayor = 0;
-        calculos = new Array();
-        tipoC = new Array();
-    });
 
     function sugerencia(tipocSu) {
         switch (tipocSu) {
@@ -671,7 +739,7 @@ $(function () {
                 $("#sugg410").show();
                 break;
             default:
-             console.log("Algo salio mal prro");
+             console.log("Algo salio mal");
         }
     }
 });

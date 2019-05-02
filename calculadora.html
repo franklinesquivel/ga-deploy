@@ -13,7 +13,7 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <!-- Main Style -->
+  <!-- Main Style --> 
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <!-- Responsive Style -->
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
@@ -275,11 +275,15 @@
 
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
-          <input type="button" name="calculo" class="wow animated fadeInDown btn btn-common mt-50" id="calcu"
-            value="Calcular">
 
-          <input type="button" name="calculo" class="wow animated fadeInDown btn btn-common mt-50" id="clean"
-            data-toggle="modal" data-target="#modalclose" value="Reiniciar">
+            <a rel="nofollow" name="calculo" id="calcu" href="javascript:void(0)"
+            class="wow animated fadeInDown btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-paper-plane"></i> Calcular
+            <div class="ripple-container"></div></a>
+
+            <a rel="nofollow" name="calculo" data-toggle="modal" data-target="#modalclose" id="clean" href="javascript:void(0)"
+            class="wow animated fadeInDown btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-refresh"></i> Reiniciar
+            <div class="ripple-container"></div></a>
+
         </div>
       </div>
       <!--Conversion-->
