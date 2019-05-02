@@ -74,6 +74,15 @@ h6 {
   color: #2d2d2d;
   font-weight: 700;
 }
+.top{
+  margin-top: -5%;
+}
+.list-group{
+  display: none;
+}
+.labi{
+  display: block;
+}
 p {
   color: #777777;
   font-size: 14px;
