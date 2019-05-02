@@ -536,6 +536,9 @@ $(function () {
         $("#reduccion").css("display","block");
         $("#suggest").show();
         $("#reduccion").show();
+        //funcion
+        sugerencia(suggest);
+
         switch (suggest) {
             case 'Electricidad':
                 $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en la electricidad!");
@@ -587,7 +590,7 @@ $(function () {
         $("#valorFin").show();
     }
 
-    $("#delete").on('click', function () {
+    $(".delete").on('click', function () {
         $("#total").text(" ");
         $("#total").hide();
         $("#unidadF").hide();
@@ -626,7 +629,49 @@ $(function () {
         $("#suggest").hide("");
         $("#reduccion").hide();
         $(".suggest-div").hide();
+        $("#num").focus();
+        $(".list-group").hide();
         results = 0;
         unidad = "";
+        mayor = 0;
+        calculos = new Array();
+        tipoC = new Array();
     });
+
+    function sugerencia(tipocSu) {
+        switch (tipocSu) {
+            case 'Electricidad':
+                $("#suggele").show();
+                break;
+            case 'Papel':
+                $("#suggpap").show();
+                break;
+            case 'Gasolina':
+                $("#sugggas").show();
+                break;
+            case 'Agua Residual':
+                $("#suggres").show();
+                break;
+            case 'Agua':
+                $("#suggagu").show();
+                break;
+            case 'Diésel':
+                $("#suggdie").show();
+                break;
+            case 'Fuel Oil':
+                $("#suggoil").show();
+                break;
+            case 'Gas Propano':
+                $("#suggpro").show();
+                break;
+            case 'Refrigerante R404 a':
+                $("#sugg404").show();
+                break;
+            case 'Refrigerante R410 a':
+                $("#sugg410").show();
+                break;
+            default:
+             console.log("Algo salio mal prro");
+        }
+    }
 });
