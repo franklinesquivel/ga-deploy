@@ -214,6 +214,7 @@ $(function () {
             //Para añadir el texto
             $("#resultados").append("Electricidad: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
             unidad = "";
+       
             $("#num").val("");
         }//Papel
         else if ((unidad === "Resmas/Año" || unidad === "Resmas/Mes" || unidad === "Resmas/Día") && num > 0) {
