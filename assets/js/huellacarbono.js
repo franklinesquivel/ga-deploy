@@ -8,6 +8,7 @@ $(function () {
     var aguaR = 0;
     $("#errorA").hide();
     $("#errorE").hide();
+    $("#errorPPM").hide();
     $("#unidadAgua").hide();
     
     $('#yellow').on('click', function () {
@@ -325,6 +326,11 @@ $(function () {
                 $("#valorIni").hide();
                 $("#unidadAgua").show();
                 aguaR = parseInt(aguaR) - parseFloat(converA);
+            }else if(ppm < 0){
+                $("#valorFin").hide();
+                $("unidadF1").hide();
+                $("#errorPPM").show();
+                $("#valorIni").hide();
             } else {
                 $("#error").hide();
                 $('#valorIni').text("Dato Inicial: " + num);
@@ -569,8 +575,15 @@ $(function () {
             $("#resultados").append("Refrigerante R410 a: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
             unidad = "";
             $("#num").val("");
-        } else if((unidad === "0" || unidad === "") && (num === "" || num <= 0)) {
-            $("#error").show();
+        } else if((unidad === "0" || unidad === "") || (num === "" || num <= 0) || (ppm === "" || ppm <= 0)) {
+            $("#valorFin").hide();
+            $("unidadF1").hide();
+            $("#valorIni").hide();
+            if((unidad === "0" || unidad === "") || (num === "" || num <= 0)){
+                $("#error").show();
+            }else if(ppm === "" || ppm <= 0){
+                $("#errorPPM").show();
+            }
         }
     });
 
