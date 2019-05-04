@@ -39,6 +39,12 @@ a:hover{
 #red{
     background: #b33939;
 }
+#errorA{
+  color: #b33939;
+}
+#errorE{
+  color: #b33939;
+}
 #blue{
   background: #2e86de;
 }

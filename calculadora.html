@@ -144,8 +144,8 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
-            <a rel="nofollow" href="javascript:void(0)" id="blue" class="wow animated slideInRight btn btn-common mt-50"
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s" title="Calcule un valor inicial de agua para desbloquear" >
+            <a rel="nofollow" href="javascript:void(0)" id="blue" class="wow animated slideInRight btn btn-common mt-50 disabled"
               data-wow-delay=".6s"><i class="icon-drop"></i> Agua Residual<div class="ripple-container"></div></a>
           </div>
         </div>
@@ -288,7 +288,7 @@
       <!--Conversion-->
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="wow animated slideInRight" data-wow-delay=".3s">
-          <h3 class="section-title">El proceso para el calculo es el siguiente: </h3>
+          <h3 class="section-title">La conversión es la siguiente:</h3>
           <br>
           <!--Unidades-->
           <p id="valorIni" class="dat-ini"></p>
@@ -332,13 +332,11 @@
           <p id="U410A" class="section-mini">$$Unidad:{ Kg R410 a \over Año}$$</p>
           <p id="U410M" class="section-mini">$$Unidad:{ Kg R410 a \over Mes}$$</p>
           <p id="U410D" class="section-mini">$$Unidad:{ Kg R410 a \over Dia}$$</p>
-          <!--
-                    <p id="valor">$${ 250 kWh \over Mes}X{ 12 Meses \over año }X{ 1 Mwh \over 1000 kWh }X{ 0.6798 Ton CO2 \over Mwh }={2.04 Ton CO2 \over año }$$</p>
-                  -->
+ 
           <!--Procesos-->
-          <p id="process" class="dat-ini">Proceso:</p>
-
-          <p id="proeleA" class="section-mini">$${ 1 Mwh \over 1000 kWh}X{0.6798 Ton CO2 \over Mwh} =$$</p>
+          <!--
+            <p id="process" class="dat-ini">Proceso:</p>
+            <p id="proeleA" class="section-mini">$${ 1 Mwh \over 1000 kWh}X{0.6798 Ton CO2 \over Mwh} =$$</p>
           <p id="proeleM" class="section-mini">$${ 12 Meses \over Año }X{ 1 Mwh \over 1000 kWh}X{0.6798 Ton CO2 \over
             Mwh} =$$</p>
           <p id="proeleD" class="section-mini">$${ 365 Dias \over Año }X{ 1 Mwh \over 1000 kWh}X{0.6798 Ton CO2 \over
@@ -403,7 +401,11 @@
             1000 Kg CO2} =$$</p>
           <p id="pro410D" class="section-mini">$${ 365 Días \over Año}X{2088 Kg CO2 \over Kg R410 a}X{1 Ton CO2 \over
             1000 Kg CO2} =$$</p>
+          -->
           <!--Resultado-->
+          <p id="errorA" class="dat-ini">El valor del agua residual debe ser menor al del agua,unidad utilizada para el estandar</p>
+          <p id="errorE" class="dat-ini">El valor máximo de la electricidad al mes es de 1000 kwh/mes</p>
+          <p id="unidadAgua" class="dat-ini">$${ m^3 Agua \over Mes}$$</p>
           <p id="valorFin" class="dat-ini"></p>
           <p id="unidadF1" class="dat-ini">$$Unidad: {Ton CO2 \over año}$$</p>
         </div>
