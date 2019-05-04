@@ -350,7 +350,7 @@ $(function () {
                 tipoC.push("Agua Residual");
 
                 $("#aguares").val('0');
-                $("#dqo").val(0);
+                $("#dqo").val('');
                 //Para calcular el resultado
                 results = parseFloat(results) + parseFloat(co2);
                 //Para añadir el texto
@@ -666,7 +666,7 @@ $(".delete").on('click', function () {
     $("#diesell").val('0');
     $("#gaso").val('0');
     $("#fueloil").val('0');
-    $("#dqo").val('0');
+    $("#dqo").val('');
     $('#propano').val('0');
     $("#error").hide();
     $("#num").val("");
