@@ -10,7 +10,8 @@ $(function () {
     $("#errorE").hide();
     $("#errorPPM").hide();
     $("#unidadAgua").hide();
-    
+    $("#dqo").val("1000");
+
     $('#yellow').on('click', function () {
         $("#elec").show();
         $("#agua").hide();
@@ -80,6 +81,7 @@ $(function () {
         $("#fueloil").hide();
         $('#propano').hide();
         $("#num").focus();
+        $("#dqo").val('');
     });
     $('#wine').on('click', function () {
         $("#elec").hide();
@@ -331,6 +333,7 @@ $(function () {
                 $("unidadF1").hide();
                 $("#errorPPM").show();
                 $("#valorIni").hide();
+                console.log(aguaR);
             } else {
                 $("#error").hide();
                 $('#valorIni').text("Dato Inicial: " + num);
@@ -679,7 +682,7 @@ $(".delete").on('click', function () {
     $("#diesell").val('0');
     $("#gaso").val('0');
     $("#fueloil").val('0');
-    $("#dqo").val('');
+    $("#dqo").val("1000");
     $('#propano').val('0');
     $("#error").hide();
     $("#num").val("");
