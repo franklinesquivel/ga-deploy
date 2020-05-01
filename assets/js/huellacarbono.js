@@ -1,4 +1,9 @@
 $(function () {
+
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+    
     var results = 0;
     var unidad;
     var mayor = 0;
