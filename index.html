@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,28 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Gestión Ambiental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet"> 
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <!-- Estilo Principal -->
+  <!-- Main Style --> 
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-  <!-- Estilo Adaptable -->
+  <!-- Responsive Style -->
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-  <!-- Fuentes -->
+  <!-- Fonts -->
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-  <!-- Iconos -->
+  <!-- Icon -->
   <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
-  <!-- Animación -->
+  <!-- Animate -->
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 
   <!-- Colores CSS  -->
   <link rel="stylesheet" type="text/css" href="assets/css/colors/default.css" media="screen" />
 
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
 
-
+  <!-- Header Area wrapper Starts -->
   <header id="header-wrap">
 
     <div id="roof" class="hidden-xs">
@@ -47,12 +57,11 @@
       </div>
     </div>
 
-
-    <!-- Menu de Navegación -->
+    <!-- Nav Menu Section Start -->
     <div class="navigation-menu">
-      <nav class="navbar navbar-default navbar-event">
+      <nav class="navbar navbar-default navbar-event" role="navigation" data-spy="affix" data-offset-top="20">
         <div class="container">
-
+          <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header col-md-2">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
               aria-expanded="false">
@@ -66,21 +75,20 @@
 
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">Inicio</a></li>
-              <li><a href="calculadora.html">Calculadora</a></li>
+              <li><a href="index.html">Inicio</a></li>
+              <li class="active"><a href="calculadora.html">Calculadora</a></li>
               <li><a href="medidas.html">Medidas</a></li>
             </ul>
-          </div><!-- /navbar-collapse -->
+          </div>
         </div><!-- /container -->
 
         <!-- Mobile Menu Start -->
         <ul class="wpb-mobile-menu">
-          <li class="active"><a href="index.html">Inicio</a></li>
-          <li><a href="calculadora.html">Calculadora</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li class="active"><a href="calculadora.html">Calculadora</a></li>
           <li><a href="medidas.html">Medidas</a></li>
         </ul>
         <!-- Mobile Menu End -->
-
       </nav>
     </div>
     <!-- Nav Menu Section End -->
@@ -88,112 +96,372 @@
   </header>
   <!-- Header Area wrapper End -->
 
-  <!-- Main Slider Section Start -->
-  <div id="carousel-area">
-    <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="assets/img/slider/bg-1.png" alt="">
-          <div class="carousel-caption">
-            <h2 class="wow fadeInRight" data-wow-delay="300ms">EcoGreen - Mejora tu vida<br> Ayuda a reducir el impacto
-              ambiental</h2>
-            <div class="buttons wow fadeInDown" data-wow-delay="0.2s"><a class="btn btn-lg btn-border"
-                href="calculadora.html">Vamos</a></div>
-            <a data-scroll href="javascript:void(0)">
-              <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
-                <span></span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/img/slider/bg-2.png" alt="">
-          <div class="carousel-caption">
-            <h2 class="wow fadeInUp" data-wow-delay="300ms">Reduce tu huella<br> En tu casa, en tu empresa, donde
-              quieras</h2>
-            <div class="buttons">
-              <a class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="300ms" href="medidas.html">Medidas</a>
-            </div>
-            <a data-scroll href="javascript:void(0)">
-              <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
-                <span></span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="item">
-          <img src="assets/img/slider/bg-3.png" alt="">
-          <div class="carousel-caption">
-            <h2 class="wow fadeInDown" data-wow-delay="300ms">Optimiza tu vida <br> Te enseñamos como mejorar tus
-              acciones</h2>
-            <a data-scroll href="javascript:void(0)">
-              <div class="rev-scroll-btn wow fadeInUp" data-wow-delay="600ms">
-                <span></span>
-              </div>
-            </a>
-          </div>
-        </div>
+  <!-- Page Header Start -->
+  <div class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <!-- <ol class="breadcrumb wow fadeInDown" data-wow-delay="300ms">
+          <li><a href="index.html">Inicio</a></li>
+          <li class="page">Calculadora</li>
+        </ol> -->
+        <h1 class="page-title wow fadeInRight" data-wow-delay="300ms">
+          Calculadora de Huella de Carbono
+        </h1>
       </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-slider" role="button" data-slide="prev">
-        <span class="icon-arrow-left" aria-hidden="true"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-slider" role="button" data-slide="next">
-        <span class="icon-arrow-right" aria-hidden="true"></span>
-      </a>
+      <div>
+      </div>
     </div>
   </div>
-  <!-- Main Slider Section End -->
-
-  <!-- Sponsors Section Start -->
+  <!-- Page Header End-->
   <section id="sponsors" class="section">
     <div class="container">
+
+      <!--Primera Fila-->
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Cálculos que puedes realizar</h2>
-          <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Para obtener el valor total de tu huella de
-            carbono debes tomar en cuenta<br> el consumo de los siguientes elementos</p>
+          <h3 class="section-title wow fadeInUp" data-wow-delay="0s">Seleccionar el recurso a evaluar</h3>
         </div>
+        <div class="row"></div>
+
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.1s">
-            <a href="#"><img src="assets/img/calculos/1.png" alt=""></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.2s">
-            <a href="#"><img src="assets/img/calculos/2.png" alt=""></a>
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+            <a data-toggle="tooltip" title="Electricidad" rel="nofollow" href="javascript:void(0)" id="yellow"
+              class="wow animated slideInLeft btn btn-common mt-50" data-wow-delay=".6s"><i class="icon-energy"></i>
+              <div class="ripple-container"></div></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
-            <a href="#"><img src="assets/img/calculos/3.png" alt=""></a>
+            <a data-toggle="tooltip" title="Agua" rel="nofollow" href="javascript:void(0)" id="bluesky"
+              class="wow animated slideInLeft btn btn-common mt-50" data-wow-delay=".6s"><i class="icon-drop"></i> 
+              <div class="ripple-container"></div></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
-            <a href="#"><img src="assets/img/calculos/4.png" alt=""></a>
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+            <a data-toggle="tooltip" title="Papel" rel="nofollow" href="javascript:void(0)" id="coffee"
+              class="wow animated slideInRight btn btn-common mt-50" data-wow-delay=".6s"><i class="icon-notebook"></i>
+              <div class="ripple-container"></div></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+            <a data-toggle="tooltip" title="Gasolina" rel="nofollow" href="javascript:void(0)" id="red" class="wow animated slideInLeft btn btn-common mt-50"
+              data-wow-delay=".6s"><i class="icon-fire"></i><div class="ripple-container"></div></a>
           </div>
         </div>
       </div>
+
+      <!--Segunda Fila-->
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+            <a data-toggle="tooltip" title="Diesel" rel="nofollow" href="javascript:void(0)" id="wine" class="wow animated slideInLeft btn btn-common mt-50"
+              data-wow-delay=".6s"><i class="icon-wrench"></i><div class="ripple-container"></div></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+            <a data-toggle="tooltip" title="Fuel oil" rel="nofollow" href="javascript:void(0)" id="orange"
+              class="wow animated slideInRight btn btn-common mt-50" data-wow-delay=".6s"><i class="icon-refresh"></i>
+              <div class="ripple-container"></div></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.3s">
+            <a data-toggle="tooltip" title="Gas Propano" rel="nofollow" href="javascript:void(0)" id="grey" class="wow animated slideInRight btn btn-common mt-50"
+              data-wow-delay=".6s"><i class="icon-fire"></i><div class="ripple-container"></div></a>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
+            <a data-toggle="tooltip" title="R404 a" rel="nofollow" href="javascript:void(0)" id="black" class="wow animated slideInLeft btn btn-common mt-50"
+              data-wow-delay=".6s"><i class="icon-bulb"></i><div class="ripple-container"></div></a>
+          </div>
+        </div>
+      </div>
+      <!--Tercer fila-->
+      <div class="row" id="last-row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="spnsors-logo wow fadeInUp" data-wow-delay="0.4s">
+            <a data-toggle="tooltip" title="R410 a" rel="nofollow" href="javascript:void(0)" id="purple"
+              class="wow animated slideInRight btn btn-common mt-50" data-wow-delay=".6s"><i class="icon-settings"></i>
+              <div class="ripple-container"></div></a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <input type="text" id="num" class="form-control" placeholder="Ingrese el factor a convertir">
+          <label for="num" id="error">Revise los datos..</label>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <select class="form-control sele" id="elec">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>kWh/Año</option>
+            <option>kWh/Mes</option>
+            <option>kWh/Día</option>
+          </select>
+          <select class="form-control sele" id="agua">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>m&sup3; Agua/Año</option>
+            <option>m&sup3; Agua/Mes</option>
+            <option>m&sup3; Agua/Día</option>
+          </select>
+          <select class="form-control sele" id="paper">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>Resmas/Año</option>
+            <option>Resmas/Mes</option>
+            <option>Resmas/Día</option>
+          </select>
+          <select class="form-control sele" id="refri410">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>Kg R410 a/Año</option>
+            <option>Kg R410 a/Mes</option>
+            <option>Kg R410 a/Día</option>
+          </select>
+          <select class="form-control sele" id="refri404">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>Kg R404 a/Año</option>
+            <option>Kg R404 a/Mes</option>
+            <option>Kg R404 a/Día</option>
+          </select>
+          <select class="form-control sele" id="aguares">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>m&sup3; Agua residual/Año</option>
+            <option>m&sup3; Agua residual/Mes</option>
+            <option>m&sup3; Agua residual/Día</option>
+          </select>
+          <select class="form-control sele" id="diesell">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>Galones de diésel/Año</option>
+            <option>Galones de diésel/Mes</option>
+            <option>Galones de diésel/Día</option>
+          </select>
+          <select class="form-control sele" id="gaso">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>Galones de gasolina/Año</option>
+            <option>Galones de gasolina/Mes</option>
+            <option>Galones de gasolina/Día</option>
+          </select>
+          <select class="form-control sele" id="fueloil">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>Galones de fuel oil/Año</option>
+            <option>Galones de fuel oil/Mes</option>
+            <option>Galones de fuel oil/Día</option>
+          </select>
+          <select class="form-control sele" id="propano">
+            <option selected value="0">Selecciona la unidad de medida inicial</option>
+            <option>Galones de gas propano/Año</option>
+            <option>Galones de gas propano/Mes</option>
+            <option>Galones de gas propano/Día</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <!--Input extra-->
+          <input type="text" id="dqo" class="form-control sele" placeholder="Valor de la concentración del efluente">
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="btn-actions-cont" class="col-md-6 col-sm-6 col-xs-12">
+            <a rel="nofollow" name="calculo" id="calcu" href="javascript:void(0)"
+            class="wow animated fadeInDown btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-paper-plane"></i> Calcular
+            <div class="ripple-container"></div></a>
+        </div>
+
+        <div id="btn-actions-cont" class="col-md-6 col-sm-6 col-xs-12">
+          <a rel="nofollow" name="calculo" data-toggle="modal" data-target="#modalclose" id="clean" href="javascript:void(0)"
+          class="wow animated fadeInDown btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-refresh"></i> Reiniciar
+          <div class="ripple-container"></div></a>
+      </div>
+      </div>
+      <!--Conversion-->
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="wow animated slideInRight" data-wow-delay=".3s">
+          <h3 class="section-title">El resultado es el siguiente:</h3>
+          <br>
+          <!--Unidades-->
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <p id="valorIni" class="dat-ini"></p>
+          
+              <p id="UeleA" class="section-mini">$$Unidad:{ kWh \over Año}$$</p>
+              <p id="UeleM" class="section-mini">$$Unidad:{ kWh \over Mes}$$</p>
+              <p id="UeleD" class="section-mini">$$Unidad:{ kWh \over Dia}$$</p>
+
+              <p id="UaguA" class="section-mini">$$Unidad:{ m^3 Agua \over Año}$$</p>
+              <p id="UaguM" class="section-mini">$$Unidad:{ m^3 Agua \over Mes}$$</p>
+              <p id="UaguD" class="section-mini">$$Unidad:{ m^3 Agua \over Dia}$$</p>
+
+              <p id="UgasA" class="section-mini">$$Unidad:{ Gal. de gasolina \over Año}$$</p>
+              <p id="UgasM" class="section-mini">$$Unidad:{ Gal. de gasolina \over Mes}$$</p>
+              <p id="UgasD" class="section-mini">$$Unidad:{ Gal. de gasolina \over Dia}$$</p>
+
+              <p id="UdieA" class="section-mini">$$Unidad:{ Gal. de diésel \over Año}$$</p>
+              <p id="UdieM" class="section-mini">$$Unidad:{ Gal. de diésel \over Mes}$$</p>
+              <p id="UdieD" class="section-mini">$$Unidad:{ Gal. de diésel \over Dia}$$</p>
+
+              <p id="U404A" class="section-mini">$$Unidad:{ Kg R404 a \over Año}$$</p>
+              <p id="U404M" class="section-mini">$$Unidad:{ Kg R404 a \over Mes}$$</p>
+              <p id="U404D" class="section-mini">$$Unidad:{ Kg R404 a \over Dia}$$</p>
+
+              <p id="UpapA" class="section-mini">$$Unidad:{ Resmas \over Año}$$</p>
+              <p id="UpapM" class="section-mini">$$Unidad:{ Resmas \over Mes}$$</p>
+              <p id="UpapD" class="section-mini">$$Unidad:{ Resmas \over Dia}$$</p>
+
+              <p id="UresA" class="section-mini">$$Unidad:{ m^3 Agua residual \over Año}$$</p>
+              <p id="UresM" class="section-mini">$$Unidad:{ m^3 Agua residual \over Mes}$$</p>
+              <p id="UresD" class="section-mini">$$Unidad:{ m^3 Agua residual \over Dia}$$</p>
+
+              <p id="UoilA" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Año}$$</p>
+              <p id="UoilM" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Mes}$$</p>
+              <p id="UoilD" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Dia}$$</p>
+
+              <p id="UproA" class="section-mini">$$Unidad:{ Gal. de gas propano \over Año}$$</p>
+              <p id="UproM" class="section-mini">$$Unidad:{ Gal. de gas propano \over Mes}$$</p>
+              <p id="UproD" class="section-mini">$$Unidad:{ Gal. de gas propano \over Dia}$$</p>
+
+              <p id="U410A" class="section-mini">$$Unidad:{ Kg R410 a \over Año}$$</p>
+              <p id="U410M" class="section-mini">$$Unidad:{ Kg R410 a \over Mes}$$</p>
+              <p id="U410D" class="section-mini">$$Unidad:{ Kg R410 a \over Dia}$$</p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <p id="valorFin" class="dat-ini"></p>
+              <p id="unidadF1" class="dat-ini">$$Unidad: {Ton CO2 \over año}$$</p>
+            </div>
+          </div>
+          
+
+          
+ 
+          <!--Procesos-->
+          <!--
+            <p id="process" class="dat-ini">Proceso:</p>
+            <p id="proeleA" class="section-mini">$${ 1 Mwh \over 1000 kWh}X{0.6798 Ton CO2 \over Mwh} =$$</p>
+          <p id="proeleM" class="section-mini">$${ 12 Meses \over Año }X{ 1 Mwh \over 1000 kWh}X{0.6798 Ton CO2 \over
+            Mwh} =$$</p>
+          <p id="proeleD" class="section-mini">$${ 365 Dias \over Año }X{ 1 Mwh \over 1000 kWh}X{0.6798 Ton CO2 \over
+            Mwh} =$$</p>
+
+          <p id="proaguA" class="section-mini">$${ 0.788 Kg CO2 \over m^3}X{ 1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+          <p id="proaguM" class="section-mini">$${ 12 Meses \over Año}X{0.788 Kg CO2 \over m^3}X{ 1 Ton CO2 \over 1000
+            Kg CO2} =$$</p>
+          <p id="proaguD" class="section-mini">$${ 365 Días \over Año}X{0.788 Kg CO2 \over m^3}X{ 1 Ton CO2 \over 1000
+            Kg CO2} =$$</p>
+
+          <p id="progasA" class="section-mini">$${ 3.78 Lts \over Gal. gasolina}X{0.784 Kg \over Lts}X{44.3 Mj \over
+            Kg}X{1 Tj \over 1,000,000 Mj}X{69.3 Ton CO2 \over Tj} =$$</p>
+          <p id="progasM" class="section-mini">$${ 12 Mes \over Año}X{3.78 Lts \over Gal. gasolina}X{0.784 Kg \over
+            Lts}X{44.3 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{69.3 Ton CO2 \over Tj} =$$</p>
+          <p id="progasD" class="section-mini">$${ 365 Días \over Año}X{3.78 Lts \over Gal. gasolina}X{0.784 Kg \over
+            Lts}X{44.3 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{69.3 Ton CO2 \over Tj} =$$</p>
+
+          <p id="prodieA" class="section-mini">$${ 3.78 Lts \over Gal. diésel}X{0.85 Kg \over Lts}X{43 Mj \over Kg}X{1
+            Tj \over 1,000,000 Mj}X{72.6 Ton CO2 \over Tj} =$$</p>
+          <p id="prodieM" class="section-mini">$${ 12 Mes \over Año}X{3.78 Lts \over Gal. diésel}X{0.85 Kg \over
+            Lts}X{43 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{72.6 Ton CO2 \over Tj} =$$</p>
+          <p id="prodieD" class="section-mini">$${ 365 Día \over Año}X{3.78 Lts \over Gal. diésel}X{0.85 Kg \over
+            Lts}X{43 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{72.6 Ton CO2 \over Tj} =$$</p>
+
+          <p id="pro404A" class="section-mini">$${ 3922 Kg CO2 \over Kg R404 a}X{1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+          <p id="pro404M" class="section-mini">$${ 12 Meses \over Año}X{3922 Kg CO2 \over Kg R404 a}X{1 Ton CO2 \over
+            1000 Kg CO2} =$$</p>
+          <p id="pro404D" class="section-mini">$${ 365 Días \over Año}X{3922 Kg CO2 \over Kg R404 a}X{1 Ton CO2 \over
+            1000 Kg CO2} =$$</p>
+
+          <p id="propapA" class="section-mini">$${ 2.3 Kg Papel \over Resma}X{3 Kg CO2 \over Kg Papel}X{1 Ton CO2 \over
+            1000 Kg CO2} =$$</p>
+          <p id="propapM" class="section-mini">$${ 12 Meses \over Año}X{2.3 Kg Papel \over Resma}X{3 Kg CO2 \over Kg
+            Papel}X{1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+          <p id="propapD" class="section-mini">$${ 365 Días \over Año}X{2.3 Kg Papel \over Resma}X{3 Kg CO2 \over Kg
+            Papel}X{1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+
+          <p id="proresA" class="section-mini">$${ 0.4 Kg DQO \over m^3}X{0.25 Kg CH4 \over Kg DQO}X{25 Kg CO2 \over Kg
+            CH4}X{1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+          <p id="proresM" class="section-mini">$${ 12 Meses \over Año}X{0.4 Kg DQO \over m^3}X{0.25 Kg CH4 \over Kg
+            DQO}X{25 Kg CO2 \over Kg CH4}X{1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+          <p id="proresD" class="section-mini">$${ 365 Días \over Año}X{0.4 Kg DQO \over m^3}X{0.25 Kg CH4 \over Kg
+            DQO}X{25 Kg CO2 \over Kg CH4}X{1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+
+          <p id="prooilA" class="section-mini">$${ 3.78 Lts \over Gal. fuel oil}X{0.965 Kg \over Lts}X{40.1 Mj \over
+            Kg}X{1 Tj \over 1,000,000 Mj}X{75.6 Ton CO2 \over Tj} =$$</p>
+          <p id="prooilM" class="section-mini">$${ 12 Mes \over Año}X{3.78 Lts \over Gal. fuel oil}X{0.965 Kg \over
+            Lts}X{40.1 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{75.6 Ton CO2 \over Tj} =$$</p>
+          <p id="prooilD" class="section-mini">$${ 365 Día \over Año}X{3.78 Lts \over Gal. fuel oil}X{0.965 Kg \over
+            Lts}X{40.1 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{75.6 Ton CO2 \over Tj} =$$</p>
+
+          <p id="proproA" class="section-mini">$${ 3.78 Lts \over Gal. gas propano}X{0.519 Kg \over Lts}X{46.2 Mj \over
+            Kg}X{1 Tj \over 1,000,000 Mj}X{63.6 Ton CO2 \over Tj} =$$</p>
+          <p id="proproM" class="section-mini">$${ 12 Mes \over Año}X{3.78 Lts \over Gal. gas propano}X{0.519 Kg \over
+            Lts}X{46.2 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{63.6 Ton CO2 \over Tj} =$$</p>
+          <p id="proproD" class="section-mini">$${ 365 Días \over Año}X{3.78 Lts \over Gal. gas propano}X{0.519 Kg \over
+            Lts}X{46.2 Mj \over Kg}X{1 Tj \over 1,000,000 Mj}X{63.6 Ton CO2 \over Tj} =$$</p>
+
+          <p id="pro410A" class="section-mini">$${ 2088 Kg CO2 \over Kg R410 a}X{1 Ton CO2 \over 1000 Kg CO2} =$$</p>
+          <p id="pro410M" class="section-mini">$${ 12 Meses \over Año}X{2088 Kg CO2 \over Kg R410 a}X{1 Ton CO2 \over
+            1000 Kg CO2} =$$</p>
+          <p id="pro410D" class="section-mini">$${ 365 Días \over Año}X{2088 Kg CO2 \over Kg R410 a}X{1 Ton CO2 \over
+            1000 Kg CO2} =$$</p>
+          -->
+          <!--Resultado-->
+          <p id="errorA" class="dat-ini">El valor del agua residual debe ser menor al del agua,unidad utilizada para el estandar</p>
+          <p id="errorE" class="dat-ini">El valor máximo de la electricidad al mes es de 1000 kwh/mes</p>
+          <p id="errorPPM" class="dat-ini">Ingrese un valor válido de ppm</p>
+          <p id="unidadAgua" class="dat-ini">$${ m^3 Agua \over Mes}$$</p>
+        </div>
+      </div>
+
     </div>
   </section>
-  <!-- Sponsors Section End -->
 
+
+  <!-- Call to action Section -->
   <section id="event" class="section">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2 class="wow animated slideInLeft" data-wow-delay=".4s"><a id="cwh" rel="nofollow"
-              href="javascript:void(0)">Empieza a calcular tu huella de carbono</a></h2>
-          <a rel="nofollow" href="calculadora.html" class="wow animated fadeInUp btn btn-common mt-50"
-            data-wow-delay=".6s"><i class="icon-paper-plane"></i> Vamos<div class="ripple-container"></div></a>
+          <h2 class="wow animated slideInRight" data-wow-delay=".2s"><a id="other" rel="nofollow"
+              href="javascript:void(0)">
+              Historial de resultados realizados
+              <div id="resultados"></div>
+            </a></h2>
+          <a rel="nofollow" id="finalizar" href="javascript:void(0)" class="wow animated fadeInUp btn btn-common mt-50"
+            data-wow-delay=".3s"><i class="icon-plus"></i> Calcular todo<div class="ripple-container"></div></a>
+          <br>
+          <br>
+          <p id="total"></p>
+          <p id="unidadF">$$Unidad: {Ton CO2 \over año}$$</p>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="sponsors section suggest-div">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 col-sm-12">
+          <p id="suggest"></p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-5 col-xs-5 col-sm-5"></div>
+        <div class="col-md-5 col-xs-5 col-sm-5">
+          <a rel="nofollow" data-toggle="modal" data-target="#recommend" id="reduccion" href="javascript:void(0)"
+            class="wow animated fadeInUp btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-eye"></i> Medidas
+            <div class="ripple-container"></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to action Section End -->
 
   <!-- Footer Section Start -->
   <footer class="section">
@@ -236,29 +504,138 @@
   </footer>
   <!-- Footer Section End -->
 
-  </div>
-  <!-- Main contetn End -->
-
-  <!-- Copytight Start -->
+  <!-- Copyright Start -->
   <section id="copyright">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <p class="copyright-text text-center">
-            ©Derechos Reservados UDB 2019
+            ©Derechos Reservados UDB 2020 - Gestión Ambiental
           </p>
         </div>
       </div>
     </div>
   </section>
-  <!-- Copytight End -->
+  <!-- Copyright End -->
+
+  <!--Modal-->
+  <div class="modal fade" id="modalclose" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="gridSystemModalLabel">¿Quieres eliminar todo?</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            &nbsp;&nbsp;&nbsp;Perderás el hitorial de resultados obtenidos
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a rel="nofollow" data-dismiss="modal" href="javascript:void(0)" id="purple"
+            class="wow animated fadeInUp btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-action-undo"></i>
+            Cerrar<div class="ripple-container"></div></a>
+
+          <a rel="nofollow" data-dismiss="modal" href="javascript:void(0)" id="delete"
+            class="wow animated fadeInUp btn btn-common mt-50 delete" data-wow-delay=".3s"><i class="icon-trash"></i>
+            Borrar
+            <div class="ripple-container"></div></a>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <!--End Modal-->
+
+  <!--Modal Sugerencias-->
+  <div class="modal fade" id="recommend" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Recomendaciones</h4>
+        </div>
+        <div class="modal-body">
+
+          <ul class="list-group" id="suggele">
+            <li class="list-group-item">Remplazar el sistema de iluminación por tecnología LED.</li>
+            <li class="list-group-item">Regular la climatización.</li>
+            <li class="list-group-item">Usar la luz natural.</li>
+            <li class="list-group-item">Eliminar el Stan by de aparatos eléctricos ( consumo fantasma).</li>
+            <li class="list-group-item">Colocar regletas para apagar y controlar varios elementos al irnos de un lugar.
+            </li>
+          </ul>
+          <ul class="list-group" id="suggpap">
+            <li class="list-group-item">Utilizar papel reciclado.</li>
+            <li class="list-group-item">Evitar cuanto sea posible el uso del papel.</li>
+            <li class="list-group-item">Educar y fomentar el reciclaje en los empleados.</li>
+            <li class="list-group-item">Colocar cestos para el papel y facilitar su reciclaje.</li>
+            <li class="list-group-item">No comprar papel procesado si no el reciclado.</li>
+          </ul>
+          <ul class="list-group" id="sugggas">
+            <li class="list-group-item">Evitar cambios bruscos de acelerar y frenar.</li>
+            <li class="list-group-item">Hacer salidas innecesarias.</li>
+            <li class="list-group-item">Llevar una carga optimizada.</li>
+            <li class="list-group-item">Optimizar las rutas.</li>
+            <li class="list-group-item">Apagar motores en grandes congestiones vehiculares.</li>
+          </ul>
+          <ul class="list-group" id="suggres">
+            <li class="list-group-item">Tratar esta agua para su uso en limpieza.</li>
+            <li class="list-group-item">Utilizar depuradores para minimizar su consumo.</li>
+            <li class="list-group-item">Poner regaderas para controlar su uso.</li>
+          </ul>
+          <ul class="list-group" id="suggagu">
+            <li class="list-group-item">Utilizar tanques captadores de agua lluvia para su utilización en limpieza.</li>
+            <li class="list-group-item">Ajustar los equipos para usar una cantidad baja de agua.</li>
+            <li class="list-group-item">Usar sistema de reciclaje de agua en enfriadores y torres de refrigeración</li>
+            <li class="list-group-item">Instalar equipos de aire que consuman bajo nivel de agua.</li>
+            <li class="list-group-item">Realizar inspecciones regulares en el sistema de agua, cañerías antiguas, válvulas desreguladas.</li>
+          </ul>
+          <ul class="list-group" id="suggdie">
+            <li class="list-group-item">Educar a los empleados que conducen para que manejen bien.</li>
+            <li class="list-group-item">Llevar una carga optimizada.</li>
+            <li class="list-group-item">Implementar un sistema de localización y gestión en los vehículos</li>
+            <li class="list-group-item">Evitar cambios bruscos de acelerar y frenar.</li>
+            <li class="list-group-item">Controlar el uso del aire acondicionado ya que este reduce el uso en un 22 %.</li>
+          </ul>
+          <ul class="list-group" id="suggoil">
+            <li class="list-group-item">Tener un sistema de suministro de combustible.</li>
+            <li class="list-group-item">Regular por medio de válvulas.</li>
+            <li class="list-group-item">Dar conferencias sobre la maquinaria para hacer un buen uso del combustible.</li>
+          </ul>
+          <ul class="list-group" id="suggpro">
+            <li class="list-group-item">En calefacción purgar los radiadores</li>
+            <li class="list-group-item">Tapar los recipientes para disminuir su consumo.</li>
+            <li class="list-group-item">En las cocinas regular la llama al tamaño de los recipientes.</li>
+          </ul>
+          <ul class="list-group" id="sugg404">
+            <li class="list-group-item">Utilizarlo a una temperatura adecuada.</li>
+            <li class="list-group-item">Limpiar el aparato para que no consuma de más.</li>
+          </ul>
+          <ul class="list-group" id="sugg410">
+            <li class="list-group-item">Utilizar el aire en modo eco reduce un 30% de gas.</li>
+            <li class="list-group-item">Instalar un sistema de flujo variado.</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a rel="nofollow" data-dismiss="modal" href="javascript:void(0)" id="delete"
+            class="wow animated fadeInUp btn btn-common mt-50 delete" data-wow-delay=".3s"><i class="icon-trash"></i>
+            Reiniciar todo
+            <div class="ripple-container"></div></a>
+          <a rel="nofollow" data-dismiss="modal" href="javascript:void(0)" id="purple"
+            class="wow animated fadeInUp btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-action-undo"></i>
+            Cerrar<div class="ripple-container"></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Modal Sugerencias-->
 
   <!-- Go to Top Link -->
-  <a href="#" class="back-to-top">
+  <a href="#header-wrap" class="back-to-top">
     <i class="icon-arrow-up"></i>
   </a>
-
-
 
   <!-- jQuery Load -->
   <script src="assets/js/jquery.min.js"></script>
@@ -266,8 +643,6 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- Wow Scroll -->
   <script src="assets/js/wow.js"></script>
-  <!-- Owl carousel -->
-  <script src="assets/js/owl.carousel.min.js"></script>
   <!-- Countdown Js -->
   <script src="assets/js/jquery.countdown.min.js"></script>
   <!-- All Js plugin -->
@@ -276,6 +651,7 @@
   <script type="text/javascript" src="assets/js/jquery.mapit.min.js"></script>
   <script src="assets/js/initializers.js"></script>
 
+  <script type="text/javascript" src="assets/js/huellacarbono.js"></script>
 </body>
 
 </html>

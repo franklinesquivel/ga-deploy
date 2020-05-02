@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700');
-@font-face{
-  font-family: "karla";
+/* @font-face{
+  /* font-family: "karla"; */
   src: url("../fonts/Karla.ttf");
 }
 @font-face{
-  font-family: "spectral";
+  /* font-family: "spectral"; */
   src: url("../fonts/Spectral.ttf");
-}
+} */
 /* ==========================================================================
    All Import File List
    ========================================================================== */
@@ -15,7 +15,7 @@
    ========================================================================== */
 body {
   font-size: 15px;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   font-weight: 400;
   color: #777777;
   margin: 0;
@@ -28,7 +28,7 @@ body {
 #error{
   color: #ee0c0c;
   font-weight: 100;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   font-size: 15px;
   padding: 0.1%;
   display: none;
@@ -49,14 +49,14 @@ body {
 #resultados{
   color: #fff;
   font-weight: 175;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   font-size: 20px;
   padding: 1.5%;
 }
 #total{
   color: #fff;
   font-weight: 250;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   font-size: 25px;
   display: none;
   margin-top: 1%;
@@ -70,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   color: #2d2d2d;
   font-weight: 700;
 }
@@ -86,7 +86,7 @@ h6 {
 p {
   color: #777777;
   font-size: 14px;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   font-weight: 400;
 }
 a {
@@ -121,7 +121,7 @@ ol {
 }
 .section-title {
   color: #2d2d2d;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   text-align: center;
   font-weight: 500;
   font-size: 40px;
@@ -131,7 +131,7 @@ ol {
 }
 .section-title-sizes {
   color: #fff;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   text-align: center;
   font-weight: 500;
   font-size: 40px;
@@ -141,7 +141,7 @@ ol {
 }
 .section-mini {
   color: #2d2d2d;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   text-align: center;
   font-weight: 300;
   font-size: 50px;
@@ -152,7 +152,7 @@ ol {
 }
 #unidadF1{
   color: #2d2d2d;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   text-align: center;
   font-weight: 300;
   font-size: 50px;
@@ -163,7 +163,7 @@ ol {
 }
 #unidadF{
   color: #FFF;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   text-align: center;
   font-weight: 300;
   font-size: 50px;
@@ -174,7 +174,7 @@ ol {
 }
 #suggest{
   color: #c23616;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   text-align: center;
   font-weight: 300;
   font-size: 25px;
@@ -185,7 +185,7 @@ ol {
 }
 .dat-ini {
   color: #2d2d2d;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   text-align: center;
   font-weight: 200;
   font-size: 30px;
@@ -210,7 +210,7 @@ ol {
   border-radius: 50px;
   color: #fff;
   font-size: 15px;
-  font-family: "karla", sans-serif;
+  /* font-family: "karla", sans-serif; */
   font-weight: 400;
   text-transform: uppercase;
   -webkit-transition: all 0.3s linear;
@@ -558,7 +558,7 @@ fieldset[disabled] .btn {
 }
 .caret:before {
   content: "\e604";
-  font-family: 'Simple-Line-Icons';
+  /* font-family: 'Simple-Line-Icons'; */
   left: -2px;
   top: -20px;
   font-size: 11px;
@@ -795,7 +795,7 @@ fieldset[disabled] .btn {
    Event location
    ========================================================================== */
 #event {
-  background: url(../img/background/1.png);
+  background: url(../img/background/bg-2.jpg);
   background-size: cover;
   position: relative;
 }
@@ -1609,7 +1609,7 @@ h1 {
   background: transparent;
   height: 100%;
   font-size: 1em;
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 400;
   padding-top: 15px;
 }
@@ -1645,7 +1645,7 @@ h1 {
   background: transparent;
   padding: 0;
   padding-top: 20px;
-  font-family: inherit;
+  /* font-family: inherit; */
   font-size: 16px;
   font-weight: 400;
 }
@@ -2154,7 +2154,7 @@ footer ul li a {
 }
 #sidebar .posts-list .widget-content a {
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   font-weight: 700;
   color: #2d2d2d;
 }
@@ -2387,4 +2387,67 @@ blockquote .quote-text {
 .form-control:focus {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.14);
   outline: none;
+}
+
+/**
+  Custom Frank Styles
+*/
+
+body {
+  background: #E0E0E0;
+}
+
+body > * {
+  font-family: 'Spartan', Arial;
+}
+
+#header-wrap, footer {
+  display: none;
+}
+
+#btn-actions-cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#btn-actions-cont a {
+  margin: 0;
+}
+
+#btn-actions-cont a:last-child {
+  margin-top: 20px;
+}
+
+.page-header {
+  background: #1DB954;
+  background: -webkit-linear-gradient(to right, #74af89, #1DB954);
+  background: linear-gradient(to right, #74af89, #1DB954);
+  border-bottom: 5px solid #191414;
+}
+
+.page-header:before {
+  display: none;
+}
+
+#sponsors .spnsors-logo, #sponsors .spnsors-logo:hover {
+  box-shadow: none;
+}
+
+.spnsors-logo a.btn {
+  font-size: 50px;
+  /* border-radius: 50%; */
+  /* padding: 10px 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spnsors-logo a.btn .ripple-container {
+  display: none;
+}
+
+#last-row {
+  display: flex;
+  justify-content: center;
 }
