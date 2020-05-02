@@ -105,7 +105,7 @@
           <li class="page">Calculadora</li>
         </ol> -->
         <h1 class="page-title wow fadeInRight" data-wow-delay="300ms">
-          Cálculo de Huella de Carbono
+          Calculadora de Huella de Carbono
         </h1>
       </div>
       <div>
@@ -119,7 +119,7 @@
       <!--Primera Fila-->
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title wow fadeInUp" data-wow-delay="0s">Seleccione el factor a evaluar</h3>
+          <h3 class="section-title wow fadeInUp" data-wow-delay="0s">Seleccionar el recurso a evaluar</h3>
         </div>
         <div class="row"></div>
 
@@ -269,64 +269,76 @@
       </div>
 
       <div class="row">
-        <div id="btn-actions-cont" class="col-md-12 col-sm-12 col-xs-12">
-
+        <div id="btn-actions-cont" class="col-md-6 col-sm-6 col-xs-12">
             <a rel="nofollow" name="calculo" id="calcu" href="javascript:void(0)"
             class="wow animated fadeInDown btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-paper-plane"></i> Calcular
             <div class="ripple-container"></div></a>
-
-            <a rel="nofollow" name="calculo" data-toggle="modal" data-target="#modalclose" id="clean" href="javascript:void(0)"
-            class="wow animated fadeInDown btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-refresh"></i> Reiniciar
-            <div class="ripple-container"></div></a>
         </div>
+
+        <div id="btn-actions-cont" class="col-md-6 col-sm-6 col-xs-12">
+          <a rel="nofollow" name="calculo" data-toggle="modal" data-target="#modalclose" id="clean" href="javascript:void(0)"
+          class="wow animated fadeInDown btn btn-common mt-50" data-wow-delay=".3s"><i class="icon-refresh"></i> Reiniciar
+          <div class="ripple-container"></div></a>
+      </div>
       </div>
       <!--Conversion-->
       <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="wow animated slideInRight" data-wow-delay=".3s">
-          <h3 class="section-title">La conversión es la siguiente:</h3>
+          <h3 class="section-title">El resultado es el siguiente:</h3>
           <br>
           <!--Unidades-->
-          <p id="valorIni" class="dat-ini"></p>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <p id="valorIni" class="dat-ini"></p>
+          
+              <p id="UeleA" class="section-mini">$$Unidad:{ kWh \over Año}$$</p>
+              <p id="UeleM" class="section-mini">$$Unidad:{ kWh \over Mes}$$</p>
+              <p id="UeleD" class="section-mini">$$Unidad:{ kWh \over Dia}$$</p>
 
-          <p id="UeleA" class="section-mini">$$Unidad:{ kWh \over Año}$$</p>
-          <p id="UeleM" class="section-mini">$$Unidad:{ kWh \over Mes}$$</p>
-          <p id="UeleD" class="section-mini">$$Unidad:{ kWh \over Dia}$$</p>
+              <p id="UaguA" class="section-mini">$$Unidad:{ m^3 Agua \over Año}$$</p>
+              <p id="UaguM" class="section-mini">$$Unidad:{ m^3 Agua \over Mes}$$</p>
+              <p id="UaguD" class="section-mini">$$Unidad:{ m^3 Agua \over Dia}$$</p>
 
-          <p id="UaguA" class="section-mini">$$Unidad:{ m^3 Agua \over Año}$$</p>
-          <p id="UaguM" class="section-mini">$$Unidad:{ m^3 Agua \over Mes}$$</p>
-          <p id="UaguD" class="section-mini">$$Unidad:{ m^3 Agua \over Dia}$$</p>
+              <p id="UgasA" class="section-mini">$$Unidad:{ Gal. de gasolina \over Año}$$</p>
+              <p id="UgasM" class="section-mini">$$Unidad:{ Gal. de gasolina \over Mes}$$</p>
+              <p id="UgasD" class="section-mini">$$Unidad:{ Gal. de gasolina \over Dia}$$</p>
 
-          <p id="UgasA" class="section-mini">$$Unidad:{ Gal. de gasolina \over Año}$$</p>
-          <p id="UgasM" class="section-mini">$$Unidad:{ Gal. de gasolina \over Mes}$$</p>
-          <p id="UgasD" class="section-mini">$$Unidad:{ Gal. de gasolina \over Dia}$$</p>
+              <p id="UdieA" class="section-mini">$$Unidad:{ Gal. de diésel \over Año}$$</p>
+              <p id="UdieM" class="section-mini">$$Unidad:{ Gal. de diésel \over Mes}$$</p>
+              <p id="UdieD" class="section-mini">$$Unidad:{ Gal. de diésel \over Dia}$$</p>
 
-          <p id="UdieA" class="section-mini">$$Unidad:{ Gal. de diésel \over Año}$$</p>
-          <p id="UdieM" class="section-mini">$$Unidad:{ Gal. de diésel \over Mes}$$</p>
-          <p id="UdieD" class="section-mini">$$Unidad:{ Gal. de diésel \over Dia}$$</p>
+              <p id="U404A" class="section-mini">$$Unidad:{ Kg R404 a \over Año}$$</p>
+              <p id="U404M" class="section-mini">$$Unidad:{ Kg R404 a \over Mes}$$</p>
+              <p id="U404D" class="section-mini">$$Unidad:{ Kg R404 a \over Dia}$$</p>
 
-          <p id="U404A" class="section-mini">$$Unidad:{ Kg R404 a \over Año}$$</p>
-          <p id="U404M" class="section-mini">$$Unidad:{ Kg R404 a \over Mes}$$</p>
-          <p id="U404D" class="section-mini">$$Unidad:{ Kg R404 a \over Dia}$$</p>
+              <p id="UpapA" class="section-mini">$$Unidad:{ Resmas \over Año}$$</p>
+              <p id="UpapM" class="section-mini">$$Unidad:{ Resmas \over Mes}$$</p>
+              <p id="UpapD" class="section-mini">$$Unidad:{ Resmas \over Dia}$$</p>
 
-          <p id="UpapA" class="section-mini">$$Unidad:{ Resmas \over Año}$$</p>
-          <p id="UpapM" class="section-mini">$$Unidad:{ Resmas \over Mes}$$</p>
-          <p id="UpapD" class="section-mini">$$Unidad:{ Resmas \over Dia}$$</p>
+              <p id="UresA" class="section-mini">$$Unidad:{ m^3 Agua residual \over Año}$$</p>
+              <p id="UresM" class="section-mini">$$Unidad:{ m^3 Agua residual \over Mes}$$</p>
+              <p id="UresD" class="section-mini">$$Unidad:{ m^3 Agua residual \over Dia}$$</p>
 
-          <p id="UresA" class="section-mini">$$Unidad:{ m^3 Agua residual \over Año}$$</p>
-          <p id="UresM" class="section-mini">$$Unidad:{ m^3 Agua residual \over Mes}$$</p>
-          <p id="UresD" class="section-mini">$$Unidad:{ m^3 Agua residual \over Dia}$$</p>
+              <p id="UoilA" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Año}$$</p>
+              <p id="UoilM" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Mes}$$</p>
+              <p id="UoilD" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Dia}$$</p>
 
-          <p id="UoilA" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Año}$$</p>
-          <p id="UoilM" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Mes}$$</p>
-          <p id="UoilD" class="section-mini">$$Unidad:{ Gal. de fuel oil \over Dia}$$</p>
+              <p id="UproA" class="section-mini">$$Unidad:{ Gal. de gas propano \over Año}$$</p>
+              <p id="UproM" class="section-mini">$$Unidad:{ Gal. de gas propano \over Mes}$$</p>
+              <p id="UproD" class="section-mini">$$Unidad:{ Gal. de gas propano \over Dia}$$</p>
 
-          <p id="UproA" class="section-mini">$$Unidad:{ Gal. de gas propano \over Año}$$</p>
-          <p id="UproM" class="section-mini">$$Unidad:{ Gal. de gas propano \over Mes}$$</p>
-          <p id="UproD" class="section-mini">$$Unidad:{ Gal. de gas propano \over Dia}$$</p>
+              <p id="U410A" class="section-mini">$$Unidad:{ Kg R410 a \over Año}$$</p>
+              <p id="U410M" class="section-mini">$$Unidad:{ Kg R410 a \over Mes}$$</p>
+              <p id="U410D" class="section-mini">$$Unidad:{ Kg R410 a \over Dia}$$</p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <p id="valorFin" class="dat-ini"></p>
+              <p id="unidadF1" class="dat-ini">$$Unidad: {Ton CO2 \over año}$$</p>
+            </div>
+          </div>
+          
 
-          <p id="U410A" class="section-mini">$$Unidad:{ Kg R410 a \over Año}$$</p>
-          <p id="U410M" class="section-mini">$$Unidad:{ Kg R410 a \over Mes}$$</p>
-          <p id="U410D" class="section-mini">$$Unidad:{ Kg R410 a \over Dia}$$</p>
+          
  
           <!--Procesos-->
           <!--
@@ -402,8 +414,6 @@
           <p id="errorE" class="dat-ini">El valor máximo de la electricidad al mes es de 1000 kwh/mes</p>
           <p id="errorPPM" class="dat-ini">Ingrese un valor válido de ppm</p>
           <p id="unidadAgua" class="dat-ini">$${ m^3 Agua \over Mes}$$</p>
-          <p id="valorFin" class="dat-ini"></p>
-          <p id="unidadF1" class="dat-ini">$$Unidad: {Ton CO2 \over año}$$</p>
         </div>
       </div>
 
@@ -418,11 +428,11 @@
         <div class="col-md-12 text-center">
           <h2 class="wow animated slideInRight" data-wow-delay=".2s"><a id="other" rel="nofollow"
               href="javascript:void(0)">
-              Cálculos realizados
-              <p id="resultados"></p>
+              Historial de resultados realizados
+              <div id="resultados"></div>
             </a></h2>
           <a rel="nofollow" id="finalizar" href="javascript:void(0)" class="wow animated fadeInUp btn btn-common mt-50"
-            data-wow-delay=".3s"><i class="icon-plus"></i> Finalizar<div class="ripple-container"></div></a>
+            data-wow-delay=".3s"><i class="icon-plus"></i> Calcular todo<div class="ripple-container"></div></a>
           <br>
           <br>
           <p id="total"></p>
@@ -500,7 +510,7 @@
       <div class="row">
         <div class="col-md-12">
           <p class="copyright-text text-center">
-            ©Derechos Reservados UDB 2019
+            ©Derechos Reservados UDB 2020 - Gestión Ambiental
           </p>
         </div>
       </div>
@@ -515,11 +525,11 @@
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
               aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="gridSystemModalLabel">¿Estas Seguro?</h4>
+          <h4 class="modal-title" id="gridSystemModalLabel">¿Quieres eliminar todo?</h4>
         </div>
         <div class="modal-body">
           <div class="row">
-            &nbsp;&nbsp;&nbsp;Si borras todo, se perdera lo que has realizado
+            &nbsp;&nbsp;&nbsp;Perderás el hitorial de resultados obtenidos
           </div>
         </div>
         <div class="modal-footer">

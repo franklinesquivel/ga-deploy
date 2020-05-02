@@ -236,7 +236,7 @@ $(function () {
                 //Para calcular el resultado
                 results = parseFloat(results) + parseFloat(co2);
                 //Para añadir el texto
-                $("#resultados").append("Electricidad: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+                $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Electricidad: " + parseFloat(co2).toFixed(2) + " Ton CO2/año </div>");
                 unidad = "";
                 $("#num").val("");
             } else if (!flag) {
@@ -275,7 +275,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Papel: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Papel: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
         }//Gasolina
@@ -308,7 +308,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Gasolina: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Gasolina: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
         }//Agua residual
@@ -368,7 +368,7 @@ $(function () {
                 //Para calcular el resultado
                 results = parseFloat(results) + parseFloat(co2);
                 //Para añadir el texto
-                $("#resultados").append("Agua Residual: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+                $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Agua Residual: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
                 unidad = "";
                 $("#num").val("");
             }
@@ -412,7 +412,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Agua: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Agua: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
             $("#blue").prop("title","")
@@ -448,7 +448,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Diesel: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Diesel: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
         }//Fuel Oil
@@ -480,7 +480,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Fuel Oil: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Fuel Oil: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
         }//Gas Propano
@@ -513,7 +513,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Gas propano: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Gas propano: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
         }//R404 a
@@ -546,7 +546,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Refrigerante R404 a: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Refrigerante R404 a: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
         }//R410 a
@@ -580,7 +580,7 @@ $(function () {
             //Para calcular el resultado
             results = parseFloat(results) + parseFloat(co2);
             //Para añadir el texto
-            $("#resultados").append("Refrigerante R410 a: " + parseFloat(co2).toFixed(2) + " Ton CO2/año<br>");
+            $("#resultados").append("<div class='col-md-6 col-sm-6 col-xs-12'>Refrigerante R410 a: " + parseFloat(co2).toFixed(2) + " Ton CO2/año</div>");
             unidad = "";
             $("#num").val("");
         } else if((unidad === "0" || unidad === "") || (num === "" || num <= 0) || (ppm === "" || ppm <= 0)) {
@@ -604,7 +604,7 @@ $(function () {
         var suggest;
         $("#total").show();
         $("#unidadF").show();
-        $("#total").prepend("Valor Final: " + results.toFixed(2));
+        $("#total").prepend("Suma de todo: " + results.toFixed(2));
 
         mayor = getMaxOfArray(calculos);
 
@@ -622,37 +622,37 @@ $(function () {
 
         switch (suggest) {
             case 'Electricidad':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en la electricidad!");
+                $("#suggest").text("El mayor de tus consumos esta en la electricidad.");
                 break;
             case 'Papel':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el papel!");
+                $("#suggest").text("El mayor de tus consumos esta en el papel.");
                 break;
             case 'Gasolina':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en la gasolina!");
+                $("#suggest").text("El mayor de tus consumos esta en la gasolina.");
                 break;
             case 'Agua Residual':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el agua residual!");
+                $("#suggest").text("El mayor de tus consumos esta en el agua residual.");
                 break;
             case 'Agua':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el agua!");
+                $("#suggest").text("El mayor de tus consumos esta en el agua.");
                 break;
             case 'Diésel':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el diésel!");
+                $("#suggest").text("El mayor de tus consumos esta en el diésel.");
                 break;
             case 'Fuel Oil':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el fuel oil!");
+                $("#suggest").text("El de tus consumos esta en el fuel oil.");
                 break;
             case 'Gas Propano':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el gas propano!");
+                $("#suggest").text("El de tus consumos esta en el gas propano.");
                 break;
             case 'Refrigerante R404 a':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el refrigerante 404 a!");
+                $("#suggest").text("El de tus consumos esta en el refrigerante 404 a.");
                 break;
             case 'Refrigerante R410 a':
-                $("#suggest").text("Hemos detectado que el mayor de tus consumos esta en el refrigerante 410 a!;");
+                $("#suggest").text("El de tus consumos esta en el refrigerante 410 a.");
                 break;
             default:
-                $("suggest").text("Algo ha ido mal");
+                $("suggest").text("Algo ha salido mal");
                 $("#suggest").show();
                 $("#reduccion").hide();
         }
@@ -665,7 +665,7 @@ $(".delete").on('click', function () {
     $("#total").text(" ");
     $("#total").hide();
     $("#unidadF").hide();
-    $("#resultados").text(" ");
+    $("#resultados").html(" ");
     $("#conversion").text(" ");
     $("#elec").hide();
     $("#agua").hide();
